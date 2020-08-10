@@ -32,7 +32,7 @@ app.use('/public',express.static(path.join(__dirname,'../public')));
 routes(app)
 
 //errorhandlers
- if ('develpment' === app.get('env')) {
+ if ('development' === app.get('env')) {
      app.use(errorHandler); 
  }
 return app;
